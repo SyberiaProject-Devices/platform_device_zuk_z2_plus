@@ -157,6 +157,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libbt-vendor
 
+# Spectrum (for initial config)
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.spectrum.profile=0
+
 # Camera
 PRODUCT_PACKAGES += \
     camera.msm8996 \
@@ -332,6 +336,8 @@ PRODUCT_PACKAGES += \
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.qcom \
+    init.spectrum.rc \
+    init.class_main.sh \
     init.qcom.power.rc \
     init.qcom.rc \
     init.qcom.sh \
@@ -381,3 +387,4 @@ PRODUCT_COPY_FILES += \
 
 # MSM8996 Headers
 PRODUCT_VENDOR_KERNEL_HEADERS := hardware/qcom/msm8996/kernel-headers
+
