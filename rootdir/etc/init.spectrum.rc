@@ -26,7 +26,7 @@ on property:sys.boot_completed=1
    setprop spectrum.support 1
 
 # Add kernel name
-   setprop persist.spectrum.kernel MadKernel
+   setprop persist.spectrum.kernel StatiX
 
 # Balance (default profile)
 on property:persist.spectrum.profile=0
@@ -86,22 +86,22 @@ on property:persist.spectrum.profile=0
     write /sys/kernel/msm_thermal/enabled 1
 
 # Performance
-on property:persist.spectrum.profile=1
-    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor "chill"
-    write /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor "chill"
+on property:persist.spectrum.profile=4
+    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor "alucard"
+    write /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor "alucard"
 
 # Battery
-on property:persist.spectrum.profile=2
-    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor "smartmax_eps"
-    write /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor "smartmax_eps"
+on property:persist.spectrum.profile=1
+    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor "darkness"
+    write /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor "darkness"
 
 # Gaming
 on property:persist.spectrum.profile=3
-    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor "lionheart"
-    write /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor "lionheart"
+    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor "ondemand"
+    write /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor "ondemand"
 
 # Ultra Battery
-on property:persist.spectrum.profile=4
-    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor "smartmax_eps"
-    write /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor "smartmax_eps"
+on property:persist.spectrum.profile=2
+    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor "powersave"
+    write /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor "powersave"
 
