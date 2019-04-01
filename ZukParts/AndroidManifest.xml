@@ -43,6 +43,15 @@
             <meta-data android:name="com.android.settings.summary"
                 android:resource="@string/advanced_settings_summary"/>
         </activity-alias>
+        <!-- Dirac Sounds -->
+        <activity
+            android:name="com.zuk.parts.dirac.DiracActivity"
+            android:label="@string/dirac_title">
+            <intent-filter>
+                 <action android:name="android.intent.action.MAIN" />
+                 <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
         <activity
             android:name="com.zuk.parts.DisplayCalibration"
             android:exported="true"
