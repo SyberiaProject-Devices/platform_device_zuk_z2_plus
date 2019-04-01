@@ -25,6 +25,8 @@ import android.support.v7.preference.PreferenceManager;
 import android.provider.Settings;
 import android.text.TextUtils;
 
+import com.zuk.parts.dirac.DiracUtils;
+
 public class Startup extends BroadcastReceiver {
 
     private void restore(String file, boolean enabled) {
@@ -51,5 +53,6 @@ public class Startup extends BroadcastReceiver {
         String storedValue = PreferenceManager.getDefaultSharedPreferences(context).getString(DeviceSettings.S2S_KEY, "0");
         Utils.writeValue(DeviceSettings.FILE_S2S_TYPE, storedValue);
         DisplayCalibration.restore(context);
+        DiracUtils.initialize();
     }
 }
