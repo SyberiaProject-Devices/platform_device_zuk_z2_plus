@@ -643,9 +643,6 @@
    <!-- Maximum color temperature, in Kelvin, supported by Night display. -->
    <integer name="config_nightDisplayColorTemperatureMax">4082</integer>
 
-    <!-- Whether device ignores the RSSNR signal implementation -->
-    <bool name="config_ignoreRssnrSignalLevel">true</bool>
-
 	<!-- Component name for default assistant on this device -->
     <string name="config_defaultAssistantComponentName">com.google.android.googlequicksearchbox/com.google.android.voiceinteraction.GsaVoiceInteractionService</string>
 
