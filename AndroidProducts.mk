@@ -14,4 +14,4 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-$(LOCAL_DIR)/xtended_z2_plus.mk
+$(LOCAL_DIR)/syberia_z2_plus.mk
