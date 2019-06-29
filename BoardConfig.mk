@@ -21,6 +21,7 @@
 #
 
 DEVICE_PATH := device/zuk/z2_plus
+ANDROID_TOP := $(shell pwd)
 
 TARGET_SPECIFIC_HEADER_PATH := $(DEVICE_PATH)/include
 
@@ -62,8 +63,8 @@ TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
 TARGET_KERNEL_SOURCE := kernel/zuk/msm8996
 TARGET_KERNEL_CONFIG := statix_defconfig
-TARGET_KERNEL_CROSS_COMPILE_PREFIX := /home/kanishk/syb/prebuilts/gcc/linux-x86/aarch64/gcc9/bin/aarch64-linux-gnu-
-TARGET_KERNEL_CLANG_PATH := /home/kanishk/syb/prebuilts/gcc/linux-x86/aarch64/clang9/bin
+TARGET_KERNEL_CROSS_COMPILE_PREFIX := $(ANDROID_TOP)/prebuilts/gcc/linux-x86/aarch64/gcc9/bin/aarch64-linux-gnu-
+TARGET_KERNEL_CLANG_PATH := $(ANDROID_TOP)/prebuilts/gcc/linux-x86/aarch64/clang9/bin
 TARGET_KERNEL_CLANG_COMPILE := true
 
 # Webview defs
