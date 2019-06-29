@@ -232,6 +232,10 @@ $(call inherit-product, $(LOCAL_PATH)/hidl.mk)
 PRODUCT_PACKAGES += \
    vndk-sp
 
+# OTA Updates
+PRODUCT_PACKAGES += \
+    Updates
+
 # IPC router config
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config
