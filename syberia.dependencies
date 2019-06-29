@@ -1,7 +1,7 @@
 [
  {
   "repository" : "prometheusXderpgang/android_vendor_zuk_z2_plus",
-  "target_path": "vendor/zuk/z2_plus,
+  "target_path": "vendor/zuk/z2_plus",
   "branch"     : "pie"
  },
  {
@@ -24,4 +24,14 @@
   "target_path": "hardware/qcom/media-caf/msm8996",
   "branch"     : "9.0-caf-8996"
  },
+ {
+  "repository" : "DerpGang/clang",
+  "target_path": "prebuilts/gcc/linux-x86/aarch64/clang9",
+  "branch"     : "9x"
+ },
+ {
+  "repository" : "DerpGang/aarch64-linux-gnu",
+  "target_path": "prebuilts/gcc/linux-x86/aarch64/gcc9",
+  "branch"     : "9"
+ }
 ]
